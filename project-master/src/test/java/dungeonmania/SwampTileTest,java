@@ -1,0 +1,23 @@
+package dungeonmania;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+import java.io.IOException;
+
+
+import dungeonmania.response.models.DungeonResponse;
+import dungeonmania.util.Direction;
+
+public class SwampTileTest {
+    @Test
+    public void MercenarySwampTile() throws IllegalArgumentException, IOException {
+        DungeonManiaController controller = new DungeonManiaController();
+        DungeonResponse newGame = controller.newGame("swampTileIntro", "Standard");
+        assertEquals(newGame.getEntities().get(22).getType(), "mercenary");
+        Position intialMercPosition = newGame.getEntities().get(22).getPosition();
+        tick = controller.tick(null, Direction.UP);
+        assertEquals(tick.getEntities().get(22).getPosition(), intialMercPosition);
+    }
+
+}

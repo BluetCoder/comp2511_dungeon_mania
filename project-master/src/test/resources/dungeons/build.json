@@ -1,0 +1,75 @@
+{
+    "width": 18,
+    "height": 16,
+    "entities": [
+        {
+            "x": 0,
+            "y": 0,
+            "type": "wood"
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "type": "wood"
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "type": "wood"
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "type": "arrow"
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "type": "arrow"
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "type": "arrow"
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "type": "key",
+            "key": 1
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "type": "treasure"
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "type": "sun_stone"
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "type": "armour"
+        },
+        {
+            "x": 1,
+            "y": 9,
+            "type": "zombie_toast_spawner"
+        },
+        {
+            "x": 5,
+            "y": 5,
+            "type": "player"
+        },
+        {
+            "x": 10,
+            "y": 9,
+            "type": "exit"
+        }
+    ],
+    "goal-condition": {
+        "goal": "exit"
+    }
+}
